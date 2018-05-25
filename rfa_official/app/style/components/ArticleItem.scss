@@ -1,0 +1,113 @@
+$maxwidth: 1111px;
+$snavblue: #108ee9;
+$snavgray: #999999;
+$snavcolor: #666666;
+
+.circle {
+    float: left;
+    margin: 15px 24px 0 0;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+}
+
+.article-container {
+    position: relative;
+    margin: 25px auto 0;
+    width: $maxwidth;
+    .article-body {
+        position: relative;
+        width: $maxwidth;
+        margin-bottom: 60px;
+        .title {
+            margin: 12px 0;
+            width: $maxwidth;
+            line-height: 21px;
+            font-size: 16px;
+            font-weight: 700;
+            color: $snavcolor;
+        }
+        .date {
+            width: $maxwidth;
+            line-height: 18px;
+            font-size: 12px;
+            color: $snavgray;
+        }
+        .para {
+            margin: 8px 0;
+            width: $maxwidth;
+            line-height: 18px;
+            font-size: 12px;
+            color: $snavcolor;
+        }
+    }
+    .tips {
+        margin-bottom: 9px;
+        li {
+            width: 77px;
+            text-align: center;
+            list-style: none;
+        }
+        .clicked {
+            height: 29px;
+            color: $snavblue;
+            border-bottom: 2px solid $snavblue;
+        }
+        .unclicked {
+            height: 30px;
+            color: $snavgray;
+            border-bottom: 1px solid $snavgray;
+        }
+    }
+}
+
+.evaluate {
+    .others {
+        width: 1111px;
+        height: auto;
+        margin: auto;
+        padding: 0 23px 27px;
+        border-top: 1px solid #e9e9e9;
+        .title {
+            display: inline-block;
+            margin-top: 10px;
+            line-height: 30px;
+            font-size: 14px;
+            font-weight: 700;
+            color: $snavcolor;
+        }
+        .date {
+            margin: 10px 0 0 20px;
+            line-height: 40px;
+            font-size: 12px;
+            color: $snavgray;
+        }
+        .iunclicked {
+            margin-top: 15px;
+            float: right;
+            height: 12px;
+            color: #cccccc;
+            font-size: 12px;
+            letter-spacing: 4px;
+        }
+        .iclicked {
+            margin-top: 15px;
+            float: right;
+            height: 12px;
+            color: #108ee9;
+            font-size: 12px;
+            letter-spacing: 4px;
+        }
+        p {
+            position: relative;
+            margin: 0 0 0 64px;
+            width: 1050px;
+            line-height: 18px;
+            font-size: 12px;
+            color: $snavcolor;
+        }
+    }
+    .others:after {
+        clear: both;
+    }
+}

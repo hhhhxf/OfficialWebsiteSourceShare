@@ -1,0 +1,86 @@
+.detail-content {
+    padding: 20px 40px;
+    .comment-content {
+        margin-bottom: 60px;
+        h1 {
+            margin: 10px 0;
+            font-size: 18px;
+            color: #666;
+        }
+        span {
+            color: #999;
+            font-size: 12px;
+        }
+        p {
+            color: #666;
+            font-size: 14px;
+            line-height: 25px;
+            text-indent: 30px;
+        }
+    }
+    .comment {
+        img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            vertical-align: top;
+            margin: 0 15px;
+        }
+        nav {
+            color: #108ee9;
+            border-bottom: 2px solid #108ee9;
+            width: 80px;
+            height: 30px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        form {
+            padding-bottom: 50px;
+            border-bottom: 1px solid #eee;
+            overflow: hidden;
+            margin-bottom: 25px;
+            textarea {
+                border: 1px solid #cccccc;
+                width: 1048px;
+                resize: vertical;
+                border-radius: 3px;
+                padding: 7px;
+                box-sizing: border-box;
+                height: 73px;
+                margin-bottom: 25px;
+            }
+            input[type="submit"] {
+                width: 80px;
+                height: 33px;
+                border-radius: 3px;
+                color: #ffffff;
+                border: none;
+                background-color: #108ee9;
+                float: right;
+            }
+        }
+        .comment-wrap {
+            border-bottom: 1px solid #eee;
+            margin-bottom: 20px;
+            &>div{
+                width: 1048px;
+                display: inline-block;
+                span {
+                    font-size: 14px;
+                    color: #999;
+                }
+                span:first-child {
+                    font-weight: bold;
+                    margin-right: 30px;
+                    color: #666;
+                }
+                p {
+                    color: #666;
+                    font-size: 14px;
+                    line-height: 25px;
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+}

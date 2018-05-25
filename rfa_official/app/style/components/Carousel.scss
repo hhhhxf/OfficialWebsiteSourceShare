@@ -1,0 +1,63 @@
+.carousel {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    height: 450px;
+    ul {
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        left: 0;
+        transition: left 1s;
+    }
+    .carousel-item {
+        display: inline-block;
+        height: 100%;
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        span {
+            padding: 16px;
+            display: inline-block;
+            background-color: rgba(0,0,0,0.6);
+            color: #fff;
+        }
+        .carousel-text {
+            position: absolute;
+            bottom: 200px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .carousel-address {
+            position: absolute;
+            bottom: 128px;
+            font-size: 18px;
+        }
+    }
+    .carousel-dots-wrap {
+        z-index:99;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 27px;
+        .carousel-dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: #ccc;
+            margin: 8px;
+            cursor: pointer;
+            border-radius: 50%;
+            vertical-align: center;
+            &.carousel-dot-selected {
+                width: 16px;
+                height: 16px;
+                margin: 5px 8px;
+                background-color: #999;
+            }
+        }
+    }
+}
