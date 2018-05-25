@@ -1,0 +1,32 @@
+.TodoItem{
+	position: relative;
+	border: solid 1px #ccc;
+	border-radius: 3px;
+	box-shadow: #ccc 1px;
+	>p:first-child{
+		border-right: 1px dashed #ccc;
+		color: #999;
+	}
+	>p{
+		display: inline-block;
+		height: 20px;
+		color: #999;
+		padding: 3px 6px;
+	}
+	>button{
+		position: absolute;
+		top: 15px;
+		right: 10px;
+		width: 80px;
+		height: 30px;
+		padding: 2px 3px;
+		border: 1px solid rgb(22,150,220);
+		border-radius: 3px;
+		background-color: rgb(22,155,213);
+		color: #fff;
+		opacity: 0.9;
+	}
+	>button &:hover{
+		opacity: 1.0;
+	}
+}

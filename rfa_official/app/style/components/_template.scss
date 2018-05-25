@@ -1,0 +1,9 @@
+// 在这里编写样式，注意顶层class与组件名称对应
+.hello{
+	>.red{
+		color: red;
+	}
+	>.green{
+		color: green;
+	}
+}

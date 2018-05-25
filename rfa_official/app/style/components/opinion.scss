@@ -1,0 +1,76 @@
+.opinion {
+    color: #666;
+    padding: 10px 25px;
+    form {
+        border-bottom: 1px solid #e9e9e9;
+        padding-bottom: 48px;
+        overflow: hidden;
+        & > textarea {
+            border: 1px solid #cccccc;
+            width: 100%;
+            resize: vertical;
+            border-radius: 3px;
+            padding: 7px;
+            box-sizing: border-box;
+            height: 73px;
+            margin-bottom: 25px;
+            color: #666;
+        }
+        & > input[type="text"] {
+            border: 1px solid #ccc;
+            width: 320px;
+            height: 28px;
+            box-sizing: border-box;
+            padding: 7px;
+            border-radius: 3px;
+            margin-bottom: 25px;
+        }
+        & > label {
+            font-size: 12px;
+            margin-right: 10px;
+        }
+        & > input[type="submit"] {
+            width: 60px;
+            height: 33px;
+            border-radius: 3px;
+            color: #ffffff;
+            border: none;
+            background-color: #108ee9;
+            float: right;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+    }
+    .feedback-wrap {
+        font-size: 12px;
+        color: #9C9A9A;
+        &>div {
+            padding-left: 20px;
+            border-bottom: 1px dashed #999;
+        }
+        &>h1 {
+            font-size: 16px;
+            font-weight: normal;
+            margin: 25px 0;
+            color: #666;
+        }
+        p {
+            margin: 18px 0;
+        }
+        .feedback-content {
+            color: #1CB5E0;
+        }
+        .response-content {
+            color: #666;
+        }
+        .response {
+            margin-left: 10px;
+            margin-bottom: 15px;
+        }
+        .feedback {
+            margin-bottom: 15px;
+        }
+    }
+}

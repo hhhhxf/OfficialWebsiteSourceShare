@@ -1,0 +1,62 @@
+body {
+    background-color: #f4f4f4;
+}
+.activity-container {
+    $bodyWidth: 1208px;
+    $sideWidth: 188px;
+    $paHeight: 71px;
+    $mt: 24px;
+    $radius: 5px;
+    $divideColor: #e9e9e9;
+    /* just have a test */
+    $testHeight: 700px;
+
+    padding-top: $mt;
+    width: $bodyWidth;
+    height: $testHeight;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: $radius;
+
+    .content {
+        float: left;
+        width: $bodyWidth - $sideWidth - 1px;
+        height: $testHeight - $paHeight - 1px;
+    }
+    .paging {
+        float: left;
+        width: $bodyWidth - $sideWidth - 1px;
+        height: $paHeight;
+        border-top: 1px solid $divideColor;
+    }
+}
+
+
+.recentAct {
+	color: #666;
+	margin-left: 24px;
+}
+.stage,.time,.place,.stageName,.timeName,.placeName {
+	height: 40px;
+	font-size: 12px;
+	font-family: 'Microsoft Yahei';
+	border-bottom: 1px solid #f3f3f3;
+	line-height: 40px;
+	text-align: left;
+}
+.stage {
+	width: 148px;
+	color: #03a9f4;
+
+}
+.time {
+	width: 325px;
+}
+.place {
+	width: 170px;
+}
+.stageName, .timeName, .placeName {
+	background-color: #f3f3f3;
+}
+
+ 

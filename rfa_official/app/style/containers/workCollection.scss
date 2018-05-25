@@ -1,0 +1,41 @@
+@import '../common.scss';
+
+.workCollectionContainer {
+    overflow: hidden;
+    zoom: 1;
+    margin-top: 13px;
+}
+
+.workCollectionItem {
+    width: 971px;
+    height: 160px;
+    border: 1px solid $border-grey;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin: 13px 24px;
+    padding: 15px 18px;
+    display: inline-block;
+    background-color: white;
+    box-sizing: border-box;
+    div {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 24px;
+        width: 708px;
+        h4 {
+            margin: 19px 0;
+            color: $text-color;
+        }
+        p {
+            color: #666;
+            font-size: 12px;
+            margin: 0;
+            line-height: 20px;
+        }
+    }
+    img {
+        width: 195px;
+        height: 127px;
+        margin: 0;
+    }
+}

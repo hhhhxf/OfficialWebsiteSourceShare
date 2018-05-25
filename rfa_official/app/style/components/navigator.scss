@@ -1,0 +1,131 @@
+.nav-class {
+    z-index: 9;
+    .navigation {
+        position: relative;
+        background-color: #3f3f3f;
+        height: 64px;
+        width: 100%;
+    }
+    .login {
+        a {
+            float: right;
+            text-decoration: none;
+            font-size: 14px;
+            color: #ccc;
+            margin-top: 25px;
+            font-family: 'Microsoft YaHei';
+            margin-right: 100px;
+        }
+    }
+    .login {
+        a:hover {
+            color: white;
+        }
+    }
+    .search {
+        float: right;
+        margin-right: 40px;
+        width: 25px;
+        height: 25px;
+        margin-top: 25px;
+    }
+    .search:hover {
+        font-size: 15px;
+        color: white;
+    }
+    .fa {
+        font-size: 21px;
+        color: #ccc;
+        float: right;
+    }
+    .fa:hover {
+        color: white;
+    }
+    .navigation img {
+        float: left;
+        height: 64px;
+    }
+    .home-navigate {
+        width: 400px;
+        float: left;
+        font-size: 14px;
+        font-family: "Microsoft YaHei";
+        height: 64px;
+        span {
+            text-decoration: none;
+            color: #ccc;
+            padding: 0 25px;
+            line-height: 64px;
+        }
+        .nav-name {
+            color: #03A9F4;
+        }
+    }
+    .home-navigate span:hover {
+        color: white;
+    }
+    .side-bar {
+        position: absolute;
+        z-index: 9;
+        height: 49px;
+        width: 100%;
+        background-color: white;
+        border-bottom: 1px solid #ececec;
+        .content1 {
+            color: black;
+            margin: 0 auto;
+            margin-left: 248px;
+            span {
+                a {
+                    display: inline-block;
+                    text-decoration: none;
+                    height: 49px;
+                    line-height: 49px;
+                    padding: 0 25px;
+                    font-size: 14px;
+                    color: #666;
+                    font-family: 'Microsoft YaHei';
+                }
+            }
+        }
+        .content1 span {
+            a:hover {
+                border-bottom: 2px solid #03A9F4;
+                color: #03A9F4;
+                height: 49px;
+            }
+        }
+    }
+    .Input {
+        float: right;
+        margin-right: 25px;
+        margin-top: 23px;
+        background-color: #3f3f3f;
+        color: #ccc;
+        font-family: "Microsoft YaHei";
+        border: 1px solid #3f3f3f;
+    }
+    .left-logo span {
+        width: 197px;
+        color: white;
+    }
+    .left-logo {
+        width: 285px;
+        .logo-charactor {
+            float: left;
+            padding-top: 10px;
+            font-family: 'Microsoft YaHei';
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .radio {
+            color: #81d4fa;
+            font-size: 14px;
+            font-family: '新宋体';
+        }
+        .association {
+            font-size: 14px;
+            font-family: '新宋体';
+        }
+    }
+}

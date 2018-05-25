@@ -1,0 +1,80 @@
+@import '../common.scss';
+
+.question-model {
+    width:100%;
+    height: 885px;
+    text-align:center;
+    z-index: 1000;
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    .question-content {
+        width: 522px;
+        height: 496px;
+        background-color: white;
+        margin: 50px auto;
+        border-radius: 3px;
+	    box-shadow: 0px 2px 3px rgba(117,117,17,0.3);
+        position: relative;
+        .question-head {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 20px 25px;
+            height: 54px;
+            border-bottom: 1px solid $border-grey;
+            h5 {
+                display: inline-block;
+                float: left;
+            }
+            .close {
+                float: right;
+                cursor: pointer;
+            }
+        }
+        input[type="text"] {
+            margin: 25px 25px 0 25px;
+            width: 473px;
+            height: 28px;
+            border-radius: 3px;
+            border: 1px solid $disable;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        span {
+            float: left;
+            display: inline-block;
+            margin: 8px 25px;
+            color: #ff6600;
+            font-size: $text-small;
+        }
+        textarea {
+            width: 474px;
+            height: 263px;
+            border-radius: 3px;
+            border: 1px solid $disable;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .question-footer {
+            border-top: 1px solid $border-grey;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            right: 0;
+            input[type="submit"] {
+                width: 60px;
+                height: 33px;
+                border-radius: 3px;
+                color: #ffffff;
+                border: none;
+                background-color: #108ee9;
+                float: right;
+                margin: 12px 25px;
+            }
+        }
+    }
+}
+.questionHidden {
+    display: none;
+}
