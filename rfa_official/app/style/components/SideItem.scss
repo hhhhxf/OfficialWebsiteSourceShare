@@ -1,0 +1,49 @@
+.sidebar {
+    $sideWidth: 188px;
+    $radius: 5px;
+
+    /* setting the height just for test */
+    /*$testHeight: 900px;*/
+    $testHeight: 700px;
+
+    width: $sideWidth;
+    height: inherit;
+
+    float: left;
+    border-bottom-left-radius: $radius;
+    .side-item {
+        $width: 188px;
+        $height: 42px;
+        position: relative;
+        $paddingLeft: 48px;
+        width: $width;
+        height: $height;
+        a {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding-left: $paddingLeft;
+            width: $width - $paddingLeft - 1px;
+            height: $height;
+            line-height: $height - 1px;
+            border-right: 2px solid transparent;
+            font-size: 14px;
+            color: #666666;
+            text-decoration: none;
+            cursor: pointer;
+            &:link,
+            &:active,
+            &:visited {
+                @extend a;
+            }
+            &:hover {
+                color: rgb(3, 169, 244);
+            }
+        }
+        .clicked {
+            border-right: 2px solid #3ea3ec !important;
+            background-color: #e6f7fe;
+        }
+    }
+}

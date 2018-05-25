@@ -1,0 +1,47 @@
+$color-active: #108ee9;
+$border-grey: #d9d9d9;
+$text-color: #666666;
+$text-small: 12px;
+$text-normal: 16px;
+$bac-color:white;
+$disable: #cccccc;
+
+html {
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: $bac-color;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+#root{
+    height: 100%;
+}
+#app {
+    height: 100%;
+    width: 100%;
+}
+li {
+    list-style-type: none;
+}
+.white-container{
+    min-height: 70%;
+}
+:-moz-placeholder {
+    color: $disable;
+}
+:-ms-input-placeholder {
+    color: $disable;
+}
+::-moz-placeholder {
+    color: $disable;
+}
+::-webkit-input-placeholder {
+    color: $disable;
+}

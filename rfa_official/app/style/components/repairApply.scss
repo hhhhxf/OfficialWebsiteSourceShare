@@ -1,0 +1,122 @@
+@import '../common.scss';
+
+.repairApply {
+    $white: #ffffff;
+    $active: #03a9f4;
+    background-color: $white;
+    text-align: center;
+    
+    .state-bar {
+        margin-bottom: 60px;
+        .pass-state {
+            border: 2px solid $active;
+            background-color: $active;
+            color: $white;
+        }
+        .pass-state+span {
+            color: $active;
+        }
+        div {
+            display: inline-block;
+            border: 2px solid $disable;
+            background-color: $white;
+            border-radius: 50%;
+            width: 23px;
+            height: 23px;
+            text-align: center;
+            line-height: 23px;
+            color: $disable;
+            font-size: $text-small;
+            margin: 11px;
+        }
+        span {
+            font-size: $text-small;
+            color: $text-color;
+            margin-right: 11px;
+        }
+        hr {
+            display: inline-block;
+            width: 15.8%;
+            border: none;
+            border-bottom: 1px solid $disable;
+            margin-bottom: 2px;
+            margin: 0 11px;
+        }
+    }
+    form {
+        label {
+            color: $text-color;
+            font-size: $text-small;
+            margin-right: 8px;
+        }
+        input[type="text"] {
+            width: 178px;
+            height: 12px;
+            @extend .input-style;
+            margin-right: 130px;
+        }
+        .input-style {
+            border-radius: 3px;
+            border: 1px solid $disable;
+            padding: 8px;
+            margin-bottom: 26px;
+        }
+        input:hover {
+            border: 1px solid $active;
+        }
+        select {
+            @extend .input-style;
+            appearance: none;
+  		    -moz-appearance:none;
+  		    -webkit-appearance:none;
+            width: 88px;
+            height: 28px;
+            padding: 0 8px;
+            background: url("../../../build/images/angle-down.png") no-repeat scroll right center transparent;;
+            background-size: 12px 7px;
+            background-origin: content-box;
+		    background-color: white; 
+            color: $disable;
+            option {
+                color: $text-color;
+            }
+        }
+        input.errorStyle {
+            outline-offset: -2px;
+		    outline: red auto 5px;
+            border: 1px solid red;
+        }
+        input.tel {
+            width: 40px;
+            margin-right: 10px;
+        }
+        input.adjustTel {
+            margin-right: 135px;
+        }
+        input.address {
+            width: 78px;
+            margin-left: 10px;
+            margin-right: 132px;
+        }
+        input.adjustName {
+            margin-right: 113px;
+            width: 175px;
+        }
+        textarea {
+            width: 304px;
+            height: 56px;
+            @extend .input-style;
+            vertical-align: top;
+            margin-bottom: 46px;
+        }
+        input[type="submit"] {
+            width: 81px;
+            height: 34px;
+            border-radius: 3px;
+            color: $white;
+            border: none;
+            line-height: 36px;
+            background-color: #108ee9;
+        }
+    }
+}
